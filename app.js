@@ -6,16 +6,6 @@ const loadingMessage = document.getElementById("loadingMessage");
 const searchInput = document.getElementById("searchInput");
 const searchButton = document.getElementById("searchButton");
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C7Y4E9LS1T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C7Y4E9LS1T');
-</script>
-
 // Fetching Wikipedia results
 async function fetchSearchResults(query) {
   const url = `https://en.wikipedia.org/w/api.php?origin=*&action=query&format=json&list=search&srsearch=${encodeURIComponent(query)}&utf8=1`;
