@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic News Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <a href="#">Dynamic<span class="highlighted">News</span></a>
+        </div>
+        <div class="controls">
+            <input type="text" placeholder="Search news..." id="searchInput" />
+            <button id="searchButton"><i class="fa fa-search"></i> Search</button>
+        </div>
+    </header>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle-container">
+        <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Trending Section -->
+        <section class="category-section">
+            <h2 class="section-title glow-text">Trending Topics</h2>
+            <div class="category-buttons">
+                <button class="category-btn">All</button>
+                <button class="category-btn">Tech</button>
+                <button class="category-btn">Health</button>
+                <button class="category-btn">Finance</button>
+                <button class="category-btn">Entertainment</button>
+            </div>
+        </section>
+
+        <!-- Featured Articles Section -->
+        <section class="trending-section">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="trending-list" id="trendingList">
+                <!-- Trending items will be dynamically populated -->
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section class="articles-section">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="article-list" id="articleList">
+                <!-- Articles will be dynamically populated -->
+            </div>
+            <button class="load-more-btn" id="loadMoreBtn">Load More</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 DynamicNews. All rights reserved.</p>
+        <p>Made with ❤️ for modern news enthusiasts.</p>
+    </footer>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>
